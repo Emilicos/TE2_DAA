@@ -14,7 +14,7 @@ def set_cover(universe, subsets,costs):
         subset = max(subsets, key=lambda s: len(s - covered)/costs[subsets.index(s)]) # Mendapatkan set dengan rasio terbesar
         cover.append(subset)
         cost+=costs[subsets.index(subset)]
-        covered |= subset
+        covered |= subset # Union operation
  
     return cover, cost
  
