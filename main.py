@@ -6,7 +6,7 @@ from branch_and_bound import BB
 from generate_dataset import DATASET
 from greedy import set_cover
 
-types = ["small", "medium"]
+types = ["small", "medium", "big"]
 set_sizes = [10, 15, 20]
 
 def WeightedSetCoverUsingGreedy(universe, subsets, costs, array_type):
